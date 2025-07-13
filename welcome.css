@@ -46,14 +46,5 @@ li {
   padding: 38px 68px 17px 55px;
   font-size: 2rem;
   font-weight: 500;
-  position: relative;
-    top: -36px;
  
-}
-
-#welcome-text p {
-  padding: 3px 3px 3px 54px;
-    position: relative;
-    top: -40px;
-    left: 7px;
 }
