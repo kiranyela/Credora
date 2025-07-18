@@ -1,110 +1,211 @@
 <!DOCTYPE html>
 <!-- saved from url=(0034)http://127.0.0.1:5500/welcome.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credora</title>
-        <link rel="stylesheet" href="welcome.css">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credora</title>
+    <link rel="stylesheet" href="welcome.css" />
+   <!--swiper css-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+
     <header class="header">
-        <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><a href="http://127.0.0.1:5500/welcome.html#Login">Login</a></li>
-                <li><a href="http://127.0.0.1:5500/welcome.html#Signup">Sign Up</a></li>
-                <li><a href="http://127.0.0.1:5500/welcome.html#watchdemo">Watch demo</a></li>
-            
-            </ul>
-        </nav>
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li><a href="http://127.0.0.1:5500/welcome.html#Login">Login</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/welcome.html#Signup">Sign Up</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/welcome.html#watchdemo"
+              >Watch demo</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <hr>
+    <hr />
     <div id="welcome-page">
-       <div id="welcome-image">
-           <img src="images/logo.png">
-       </div>
-        <div id="welcome-text">
-           <h1>Turn your actions into Impact</h1>
-           <p>Build your CredScore.Unlock real world rewards</p>
-        </div>  
+      <div id="welcome-image">
+        <img src="images/logo.png" />
+      </div>
+      <div id="welcome-text">
+        <h1>Turn your actions into Impact</h1>
+        <p>Build your CredScore.Unlock real world rewards</p>
+        <button>Get Started</button>
+      </div>
     </div>
-    
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <div id="intro">
+      <div id="intro-text">
+        <h1>What is Credora?</h1>
+        <p>Credora is a platform that measure your social impact through verified good deeds and gives you real world rewards like internships,scholarships and funding</p>
+      </div>
+      <div class="swipe-main">
+      <div class="swiper">
+         <div class="intro-cards swiper-wrapper">
+            <div class="card swiper-slide">
+            <img src="images/aibackedtrust.jpeg">
+            <h4>AI Backed Trust</h4>
+            </h4>
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body></html>
+            </div>
+            <div class="card swiper-slide">
+          <img src="images/verifiedactions.png">
+          <h4>Verified Actions</h4>
+
+            </div>
+            <div class="card swiper-slide">
+        <img src="images/scholarships.jpeg">
+        <h4>Scholarships</h4>
+
+            </div>
+            <div class="card swiper-slide">
+      <img src="images/internships.jpeg">
+      <h4>Verified Actions</h4>
+
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+    </div>
+    <div id="timeline">
+      <h1>How CredScore Works?</h1>
+      <ul>
+        <li>SignUp</li>
+        <li>Submit Actions</li>
+        <li>Get Verified with Ai+community</li>
+        <li>Earn CreadScore</li>
+        <li>Redeem for real Opportunities</li>
+      </ul>
+    </div>
+
+
+           <!--swiper js-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="welcome.js"></script>
+    
+
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
